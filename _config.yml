@@ -1,1 +1,24 @@
-theme: jekyll-theme-cayman
+name: VSU NSBE
+title: VSU NSBE
+description: VSU Chapter of NSBE
+url: "https://xkel.github.io"
+logo: ResizedNSBE.jpg
+
+social:
+  github: VSU-NSBE
+  twitter: VSU_NSBE
+  email: virginiastate.nsbe@gmail.com
+
+markdown: kramdown
+theme: minima
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
