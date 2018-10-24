@@ -1,0 +1,23 @@
+{% for node in pages_list %}
+
+    {% if group == null or group == node.group %}
+
+        {% if page.url == node.url %}
+            <li><a class="active" href="{{ node.url }}">{{ node.title }}</a></li>
+        {% elsif node.order != 0 %}
+            <li><a href="{{ node.url }}">{{ node.title }}</a></li>
+        {% endif %}
+
+    {% endif %}
+
+{% endfor %}
+<hr>
+<h4 style="margin: 10px 0px">Visit:</h4>
+<li><a href="https://nsbe.org" target="_blank">NSBE.org</a></li>
+<li><a href="https://nsbe.org/Regions/Region2/default.aspx" target="_blank">Region II</a></li>
+<li><a href="https://vsu.edu" target="_blank">VSU</a></li>
+
+<a href="https://groupme.com/join_group/43498393/a8xDf8/"><img src="/assets/ResizedGroupme.png" /></a>
+
+{% assign pages_list = nil %}
+{% assign group = nil %}
